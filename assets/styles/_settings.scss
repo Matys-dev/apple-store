@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900; /* plage de poids disponibles */
+  font-style: normal;
+}
+
+$white: rgb(253, 253, 253);
+$grey1: rgba(240, 240, 240, 0.681);
+$grey2: rgb(117, 117, 117);
+
+@mixin childCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin alignChildren($space) {
+  display: flex;
+  align-items: center;
+  justify-content: $space;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background: $grey1;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
