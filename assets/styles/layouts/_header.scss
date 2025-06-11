@@ -1,0 +1,127 @@
+header {
+  .first-line {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 35vh;
+    .left-part {
+      @include childCenter;
+      h1 {
+        font-size: 2.8rem;
+        font-weight: 600;
+        padding: 80px 250px 100px 80px;
+        span:last-child {
+          color: $grey2;
+        }
+      }
+    }
+
+    .right-part {
+      @include childCenter;
+      flex-direction: column;
+      margin: 90px 0;
+
+      .help {
+        display: flex;
+        width: 100%;
+        .help-img {
+          @include childCenter;
+          margin-right: 10px;
+          img {
+            width: 35px;
+            height: 35px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 50%;
+          }
+        }
+        .help-text {
+          margin: auto 0;
+          p {
+            font-size: 0.9rem;
+          }
+          .help-p-1 {
+            font-weight: 500;
+          }
+          a {
+            text-decoration: none;
+            color: rgb(12, 107, 216);
+            &:hover {
+              text-decoration: underline;
+            }
+            p {
+              margin-top: 4px;
+            }
+            i {
+              margin-left: 3px;
+            }
+          }
+        }
+      }
+
+      .near-store {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        .near-store-img {
+          @include childCenter;
+          margin-right: 10px;
+          img {
+            width: 35px;
+            height: 35px;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+        }
+        .near-store-text {
+          margin: auto 0;
+          p {
+            font-size: 0.9rem;
+          }
+          .near-store-p-1 {
+            font-weight: 500;
+          }
+          a {
+            text-decoration: none;
+            color: rgb(12, 107, 216);
+            &:hover {
+              text-decoration: underline;
+            }
+            p {
+              margin-top: 4px;
+            }
+            i {
+              margin-left: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .nav2 {
+    ul {
+      @include alignChildren(space-around);
+      height: 25vh;
+      width: 90%;
+      margin: 0 auto;
+      li {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        height: 70%;
+        &:nth-child(5) {
+          }
+        img {
+          height: auto;
+          width: 100px;
+          margin: auto 0;
+        }
+        p {
+          text-align: center;
+          font-weight: 500;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
