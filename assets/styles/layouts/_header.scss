@@ -1,4 +1,5 @@
 header {
+    height: 75vh;
   .first-line {
     display: grid;
     grid-template-columns: 70% 30%;
@@ -110,6 +111,7 @@ header {
         margin: 0 auto;
         height: 70%;
         &:nth-child(5) {
+            @include childCenter;
           }
         img {
           height: auto;

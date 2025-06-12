@@ -75,6 +75,9 @@ img {
   text-decoration: underline;
 }
 
+header {
+  height: 75vh;
+}
 header .first-line {
   display: grid;
   grid-template-columns: 70% 30%;
@@ -235,6 +238,17 @@ header .nav2 ul li {
           flex-direction: column;
   margin: 0 auto;
   height: 70%;
+}
+header .nav2 ul li:nth-child(5) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .nav2 ul li img {
   height: auto;
