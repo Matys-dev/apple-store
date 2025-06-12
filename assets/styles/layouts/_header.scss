@@ -1,5 +1,5 @@
 header {
-    height: 75vh;
+  height: 75vh;
   .first-line {
     display: grid;
     grid-template-columns: 70% 30%;
@@ -110,9 +110,10 @@ header {
         flex-direction: column;
         margin: 0 auto;
         height: 70%;
+        cursor: pointer;
         &:nth-child(5) {
-            @include childCenter;
-          }
+          @include childCenter;
+        }
         img {
           height: auto;
           width: 100px;
@@ -122,6 +123,9 @@ header {
           text-align: center;
           font-weight: 500;
           font-size: 0.9rem;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }

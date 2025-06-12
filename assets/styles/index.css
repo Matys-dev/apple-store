@@ -238,6 +238,7 @@ header .nav2 ul li {
           flex-direction: column;
   margin: 0 auto;
   height: 70%;
+  cursor: pointer;
 }
 header .nav2 ul li:nth-child(5) {
   display: -webkit-box;
@@ -259,4 +260,7 @@ header .nav2 ul li p {
   text-align: center;
   font-weight: 500;
   font-size: 0.9rem;
+}
+header .nav2 ul li p:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=index.css.map */
